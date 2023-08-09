@@ -11,6 +11,10 @@ pip install -r requirements.txt --upgrade
 ```shell
 sh run_sft.sh
 ```
+#### Description of training parameters
+
+
+
 
 ### Inference
 After the training is complete, we load the trained model to evaluate on Dace Race Benchmark.
