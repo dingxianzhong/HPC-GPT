@@ -18,7 +18,7 @@ pip install -r requirements.txt --upgrade
 sh run_sft.sh
 ```
 #### Description of training parameters
-1. If you want to train on a single card, you only need to set nproc_per_node to 1, or remove the torchrun command and run the python script directly, such as `python run_supervised_finetuning.py`.
+1. If you want to train on a single card, you only need to set nproc_per_node to 1, or remove the torchrun command and run the python script directly, such as `python supervised_finetuning.py`.
 2. The default pre-training model is LLaMA. Change `model_name_or_path` to use other pre-training model such as `meta-llama/Llama-2-7b-chat-hf`.
 3. Specify the training set, `--train_file_dir` specify the training data directory, and `--validation_file_dir` specify the verification data directory. If not specified, the `--dataset_name` specified HF datasets dataset will be used by default.
 4. If the gpu supports int8, plus `--load_in_8bit` Truethe representative adopts 8-bit quantization training, it can significantly reduce memory usage.
