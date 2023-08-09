@@ -21,3 +21,15 @@ python inference.py \
     --with_prompt \
     --interactive
 ```
+
+Parameter Description:
+
+- `--base_model {base_model}`: Directory to store LLaMA model weights and configuration files in HF format
+- `--lora_model {lora_model}`: The directory where the LoRA file is decompressed, and the name of the HF Model Hub model can also be used. If you have incorporated LoRA weights into the pre-trained model, you can not provide this parameter
+- `--tokenizer_path {tokenizer_path}`: Store the directory corresponding to the tokenizer. If this parameter is not provided, its default value is the same as --lora_model; if the --lora_model parameter is not provided, its default value is the same as --base_model
+- `--with_prompt`: Whether to merge the input with the prompt template. Be sure to enable this option if loading an Alpaca model!
+- `--interactive`: start interactively for multiple single rounds of question and answer
+- `--data_file {file_name}`: Start in non-interactive mode, read the contents of file_name line by line for prediction
+- `--predictions_file {file_name}`: In non-interactive mode, write the predicted results to file_name in json format
+- `--use_cpu`: use only CPU for inference
+- `--gpus {gpu_ids}`: Specifies the number of GPU devices used, the default is 0. If using multiple GPUs, separate them with commas, such as 0,1,2
