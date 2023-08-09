@@ -13,6 +13,7 @@ sh run_sft.sh
 ```
 
 ### Inference
+After the training is complete, we load the trained model to evaluate on Dace Race Benchmark.
 ```shell
 python inference.py \
     --base_model path_to_llama_hf_dir \
