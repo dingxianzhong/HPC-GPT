@@ -1,5 +1,11 @@
 ## HPC-GPT : Integrating Large Language Model for High-Performance Computing
 ### Introduction
+Large Language Models (LLMs), including the LLaMA model, have exhibited their efficacy across various general-domain natural language processing (NLP) tasks. However, their per-
+formance in high-performance computing (HPC) domain tasks has been less than optimal due to the specialized expertise required to interpret the model’s responses. In response
+to this challenge, we propose HPC-GPT , a novel LLaMA-based model that has undergone supervised fine-tuning using generated QA (Question-Answer) instances. To evaluate
+its effectiveness, we concentrate on two HPC tasks: Managing training datasets and AI models for HPC, and data race detection.
+
+
 ### Install
 ```markdown
 https://github.com/MLG-HPCE2023/HPC-GPT.git
