@@ -12,8 +12,8 @@ pip install -r requirements.txt --upgrade
 sh run_sft.sh
 ```
 #### Description of training parameters
-
-
+1. If you want to train on a single card, you only need to set nproc_per_node to 1, or remove the torchrun command and run the python script directly, such as python scripts/run_supervised_finetuning.py
+2. The default pre-training model is LLaMA.
 
 
 ### Inference
