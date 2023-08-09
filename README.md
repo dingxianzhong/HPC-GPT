@@ -13,11 +13,10 @@ sh run_sft.sh
 ```
 #### Description of training parameters
 1. If you want to train on a single card, you only need to set nproc_per_node to 1, or remove the torchrun command and run the python script directly, such as `python run_supervised_finetuning.py`。
-2. The default pre-training model is LLaMA.
-3. Specify the training set, --train_file_dir specify the training data directory, and --validation_file_dir specify the verification data directory. If not specified, the --dataset_name specified HF datasets dataset will be used by default.
-4. If the operating environment supports deepspeed, add --deepspeed deepspeed_config.json.
-5. If the gpu supports int8, plus --load_in_8bit Truethe representative adopts 8bit quantization training, it can significantly reduce the memory usage.
-6. Debug the model, --max_train_samples and --max_eval_samples specify the maximum number of samples for the training and validation datasets to quickly verify whether the code is available. Please delete these two parameters or set them to -1 during training.
+2. The default pre-training model is LLaMA. Change `model_name_or_path` to use other pre-training model such as `meta-llama/Llama-2-7b-chat-hf`.
+3. Specify the training set, `--train_file_dir` specify the training data directory, and `--validation_file_dir` specify the verification data directory. If not specified, the `--dataset_name` specified HF datasets dataset will be used by default.
+4. If the gpu supports int8, plus `--load_in_8bit` Truethe representative adopts 8-bit quantization training, it can significantly reduce memory usage.
+5. Debug the model, `--max_train_samples` and `--max_eval_samples` specify the maximum number of samples for the training and validation datasets to quickly verify whether the code is available. Please delete these two parameters or set them to -1 during training.
 
 ### Inference
 After the training is complete, we load the trained model to evaluate on Dace Race Benchmark.
