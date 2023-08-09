@@ -35,4 +35,7 @@ Parameter Description:
 - `--gpus {gpu_ids}`: Specifies the number of GPU devices used, the default is 0. If using multiple GPUs, separate them with commas, such as 0,1,2
 
 ### Dataset
-5.86k HPC datasets (https://huggingface.co/datasets/HPC-GPT/HPC)
+5.86k HPC datasets include two tasks for the high-performance computing (HPC) domain.
+Task 1 is managing AI models and datasets which includes programming language processing (PLP) and MLPerf.
+Task 2 is data race detection which includes c/c++ language and fortran language.
+(https://huggingface.co/datasets/HPC-GPT/HPC)
