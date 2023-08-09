@@ -33,3 +33,6 @@ Parameter Description:
 - `--predictions_file {file_name}`: In non-interactive mode, write the predicted results to file_name in json format
 - `--use_cpu`: use only CPU for inference
 - `--gpus {gpu_ids}`: Specifies the number of GPU devices used, the default is 0. If using multiple GPUs, separate them with commas, such as 0,1,2
+
+### Dataset
+5.86k HPC datasets (https://huggingface.co/datasets/HPC-GPT/HPC)
