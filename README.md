@@ -8,4 +8,15 @@ pip install -r requirements.txt --upgrade
 ```
 
 ### Supervised FineTuning
+```shell
+sh run_sft.sh
+```
+
 ### Inference
+```shell
+python inference.py \
+    --base_model path_to_llama_hf_dir \
+    --lora_model path_to_lora \
+    --with_prompt \
+    --interactive
+```
