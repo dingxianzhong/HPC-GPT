@@ -38,4 +38,4 @@ Parameter Description:
 5.86k HPC datasets include two tasks for the high-performance computing (HPC) domain.
 Task 1 is managing AI models and datasets which includes programming language processing (PLP) and MLPerf.
 Task 2 is data race detection which includes c/c++ language and fortran language.
-(https://huggingface.co/datasets/HPC-GPT/HPC)
+All datasets can be downloaded here (https://huggingface.co/datasets/HPC-GPT/HPC).
